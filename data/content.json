@@ -1,0 +1,38 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "role": "Designer, builder & problem solver",
+    "tagline": "I turn complex ideas into clear, useful experiences.",
+    "summary": "This is the place for a short, human introduction: the kind of work you do, the problems you enjoy, and the perspective you bring.",
+    "location": "Based anywhere, working everywhere",
+    "email": "hello@example.com",
+    "linkedin": "",
+    "github": "",
+    "website": "",
+    "resumeUrl": "",
+    "avatarUrl": ""
+  },
+  "projects": [
+    {
+      "id": "signal-studio",
+      "title": "Signal Studio",
+      "description": "A focused product concept that made a complicated workflow feel calm and obvious.",
+      "tags": ["Product strategy", "UX design", "Prototyping"],
+      "link": "",
+      "imageUrl": "",
+      "featured": true,
+      "createdAt": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "id": "field-notes",
+      "title": "Field Notes",
+      "description": "A research-led project shaped around the small details people usually miss.",
+      "tags": ["Research", "Systems thinking", "Storytelling"],
+      "link": "",
+      "imageUrl": "",
+      "featured": true,
+      "createdAt": "2026-09-11T00:00:00.000Z"
+    }
+  ],
+  "uploads": []
+}
