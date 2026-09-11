@@ -1,0 +1,14 @@
+{
+  "name": "insightforge-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A two-interface portfolio site with a private content dashboard.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check public/admin.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
