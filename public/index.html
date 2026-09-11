@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A selected portfolio and résumé." />
+    <title>InsightForge — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-header wrap">
+      <a class="brand" href="#top" aria-label="InsightForge home"><span class="brand-mark">IF</span><span>InsightForge</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Selected work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="text-link resume-link" href="#" target="_blank" rel="noreferrer" hidden>View CV <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <p class="eyebrow">Portfolio / <span id="location">Everywhere</span></p>
+        <div class="hero-grid">
+          <div>
+            <p class="hero-kicker" id="role">Designer, builder &amp; problem solver</p>
+            <h1 id="tagline">I turn complex ideas into <em>clear, useful</em> experiences.</h1>
+          </div>
+          <aside class="intro-card" aria-label="Introduction">
+            <div class="avatar-placeholder" id="avatar"><span>IF</span></div>
+            <p id="summary">A clear, thoughtful portfolio begins with the work and ends with the person behind it.</p>
+            <a class="arrow-link" href="#work">Explore the work <span>↓</span></a>
+          </aside>
+        </div>
+        <div class="hero-line"></div>
+      </section>
+
+      <section class="work-section wrap" id="work">
+        <div class="section-heading"><p class="eyebrow">01 / Selected work</p><p>Ideas made tangible.</p></div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="wrap about-grid">
+          <p class="eyebrow">02 / The approach</p>
+          <div>
+            <h2>Good work begins by asking <em>better questions.</em></h2>
+            <p class="about-copy">InsightForge is a living home for the work, thinking, and experiments behind a career. It is designed to feel personal, precise, and easy to explore.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section wrap" id="contact">
+        <p class="eyebrow">03 / Let's connect</p>
+        <h2>Have an idea worth <em>forging?</em></h2>
+        <a class="contact-email" id="email" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+        <div class="social-links" id="social-links"></div>
+      </section>
+    </main>
+
+    <footer class="wrap footer"><span>© <span id="year"></span> <span id="footer-name">InsightForge</span></span><a href="#top">Back to top ↑</a></footer>
+    <template id="project-template">
+      <article class="project-card">
+        <div class="project-visual"><span class="project-number"></span><div class="image-placeholder">Project<br />preview</div></div>
+        <div class="project-content"><div><p class="project-title"></p><p class="project-description"></p></div><div class="project-bottom"><div class="tags"></div><a class="project-link" target="_blank" rel="noreferrer" hidden>View project <span>↗</span></a></div></div>
+      </article>
+    </template>
+    <script src="/app.js"></script>
+  </body>
+</html>

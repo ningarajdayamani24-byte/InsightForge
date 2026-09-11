@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>InsightForge — Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <a class="brand admin-brand" href="/"><span class="brand-mark">IF</span><span>InsightForge</span></a>
+      <section class="login-panel" id="login-panel">
+        <p class="eyebrow">Private workspace</p>
+        <h1>Welcome back.</h1>
+        <p>Sign in to update the portfolio, add projects, and upload a new CV.</p>
+        <form id="login-form" class="stack-form"><label>Password<input name="password" type="password" autocomplete="current-password" required autofocus /></label><button class="primary-button" type="submit">Sign in <span>→</span></button></form>
+        <p class="form-note" id="login-message" aria-live="polite"></p>
+      </section>
+
+      <section class="dashboard" id="dashboard" hidden>
+        <div class="dashboard-header"><div><p class="eyebrow">Private workspace</p><h1>Make it yours.</h1></div><div class="header-actions"><a class="secondary-button" href="/" target="_blank">View site ↗</a><button class="ghost-button" id="logout-button">Sign out</button></div></div>
+        <p class="notice" id="notice" aria-live="polite"></p>
+        <div class="dashboard-grid">
+          <section class="admin-card profile-card"><div class="card-title"><span>01</span><h2>Your profile</h2></div><form id="profile-form" class="admin-form"><div class="form-columns"><label>Name<input name="name" required /></label><label>Role<input name="role" required /></label></div><label>Headline<textarea name="tagline" rows="2" required></textarea></label><label>Short introduction<textarea name="summary" rows="4" required></textarea></label><div class="form-columns"><label>Location<input name="location" /></label><label>Email<input name="email" type="email" /></label></div><div class="form-columns"><label>LinkedIn URL<input name="linkedin" type="url" placeholder="https://…" /></label><label>GitHub URL<input name="github" type="url" placeholder="https://…" /></label></div><label>Website URL<input name="website" type="url" placeholder="https://…" /></label><button class="primary-button" type="submit">Save profile <span>→</span></button></form></section>
+          <section class="admin-card upload-card"><div class="card-title"><span>02</span><h2>Files &amp; photo</h2></div><p>Upload a PDF CV, a profile image, or project image. Files are kept privately until you use their link.</p><form id="upload-form" class="upload-form"><label class="file-picker"><span>Choose a file</span><input name="file" type="file" required /><small id="selected-file">No file selected</small></label><label>Use this file as<select name="target"><option value="resume">My CV / résumé</option><option value="avatar">My profile photo</option><option value="project">A project image</option></select></label><button class="primary-button" type="submit">Upload file <span>↑</span></button></form><div class="upload-list" id="upload-list"></div></section>
+          <section class="admin-card projects-card"><div class="card-title"><span>03</span><h2>Selected projects</h2></div><form id="project-form" class="admin-form compact"><div class="form-columns"><label>Project title<input name="title" required /></label><label>Tags<input name="tags" placeholder="Design, Research" /></label></div><label>Description<textarea name="description" rows="3" required></textarea></label><div class="form-columns"><label>Project link<input name="link" type="url" placeholder="https://…" /></label><label>Image link<input name="imageUrl" type="url" placeholder="Paste an uploaded image URL" /></label></div><label class="checkbox-label"><input name="featured" type="checkbox" checked /> Show on public site</label><button class="primary-button" type="submit">Add project <span>+</span></button></form><div class="project-list" id="admin-project-list"></div></section>
+        </div>
+      </section>
+    </main>
+    <script src="/admin.js"></script>
+  </body>
+</html>
